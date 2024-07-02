@@ -1,0 +1,119 @@
+:root{
+    --negro: black;
+    --blanco: white;
+    --gris: rgb(31, 31, 31);
+    --fondo: linear-gradient(to bottom, #0087ac, #6fa1c5, #a9bdda, #d9dcec, #ffffff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--fondo);
+    text-shadow: 0px 0px 4px var(--blanco);
+}
+.fecha_nacimiento{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 10px 0 10px 0;
+}
+
+.fecha_nacimiento input{
+    color: var(--blanco);
+    background-color:var(--gris);
+}
+
+.header{
+margin: 0 auto;
+text-align: center;
+}
+
+/* --------------------------------------------------------------------- */
+.cuadro{
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    border: solid 2px var(--negro);
+    
+}
+/* --------------------------------------------------------------------- */
+.progreso{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-weight: bold;
+}
+.barra_progreso{
+    border: solid 2px var(--negro);
+    height: 20px;
+    padding: 2px 2px 2px 2px;
+    
+    display: grid;
+    grid-template-columns: repeat(109,3px)
+    
+}
+.porcentaje_completo{
+    background-color: var(--negro);
+}
+.porcentaje_incompleto{
+    background-color: var(--negro);
+    opacity: 30%;
+}
+
+/* --------------------------------------------------------------------- */
+.semanas-vividas {
+    display: grid;
+    grid-template-columns: repeat(54, 10px);
+    gap: 5px;
+    position: relative;
+    margin: 0 auto;
+    justify-items: center;
+    padding: 15px;
+
+}
+
+.semana-no-vivida {
+    border: solid 1px var(--negro);
+    background-color: var(--blanco);
+    aspect-ratio: 1;
+    width: 10px;
+    border-radius: 3px;
+}
+
+.semana-vivida {
+    background-color: var(--negro);
+    aspect-ratio: 1;
+    width: 10px;
+
+}
+
+.semanas-label {
+    color: var(--negro);
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.separador-v {
+    width: 10px;
+}
+
+.separador-h {
+    width: 100%;
+    height: 2px;
+    grid-column: span 54;
+}

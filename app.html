@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semanas Vividas - Memento Mori</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <section class="fecha_nacimiento">
+        <label for="f_nac">Fecha de Nacimiento:</label>
+        <input type="date" name="f_nacimiento" id="f_nac" onchange="obtenerFecha()">
+
+    </section>
+    <div class="all">
+        <div class="header">
+            <h1 class="titulo">Memento Mori</h1>
+            <h2 class="subtitulo"></h2>
+            <p class="p-semanas">llevas vivido 0 semanas de 0</p>
+            <p class="p-anios">llevas vivido 0 años de 0</p>
+        </div>
+        <div class="cuadro">
+            <h3>SEMANAS CON VIDA:</h3>
+            <section class="progreso">
+                <div class="barra_progreso"></div>
+                <span class="porcentaje_progreso">0%</span>
+            </section>
+            <section class="semanas-vividas">
+            </section>
+        </div>
+    </div>
+    <script src="./FechaNacimiento.js"></script>
+    <script src="./frases.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
