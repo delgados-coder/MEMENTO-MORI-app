@@ -1,4 +1,4 @@
-fechaNacimiento = "1993-06-30"
+fechaNacimiento = "2003-06-05"
 const edad_maxima = 90;
 const semanas_por_anio = 52;
 
